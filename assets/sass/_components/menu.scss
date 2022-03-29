@@ -1,0 +1,133 @@
+.c-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 21;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .7s linear;
+    transition-delay: .35s;
+    background: #000;
+    display: flex;
+    align-items: center;
+
+    .menu-active & {
+        opacity: 1;
+        visibility: visible;
+        transition: all .35s linear;
+        transition-delay: 0s;
+    }
+
+    
+    nav ul li:nth-child(2) a span {transition-delay: .05s;}
+    nav ul li:nth-child(3) a span {transition-delay: .10s;}
+    nav ul li:nth-child(4) a span {transition-delay: .15s;}
+    nav ul li:nth-child(5) a span {transition-delay: .20s;}
+    
+    main.active  nav ul li:nth-child(2) a span {transition-delay: .05s;}
+    main.active  nav ul li:nth-child(3) a span {transition-delay: .10s;}
+    main.active  nav ul li:nth-child(4) a span {transition-delay: .15s;}
+    main.active  nav ul li:nth-child(5) a span {transition-delay: .20s;}
+    
+
+    &-nav {
+        
+
+        &__link {
+            display: block;
+            transform: translate(0, 100%);
+            transition: all .3s $cubic-bezier;
+
+            position: relative;
+
+            &:not(.router-link-active) {
+                &:hover {
+                    .c-menu-nav__row2 {
+                        transform: translate(0, 0);
+                    }
+                    .c-menu-nav__row1 {
+                        transform: translate(0, -100%);
+                    }
+                    .u-bg {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            
+
+            .menu-active & {
+                transform: translate(0, 0);
+                transition: transform .6s $cubic-bezier, all $transition ;
+            }
+
+            &.router-link-active {
+                opacity: .25;
+
+                &:hover {
+                    opacity: .5;
+                }
+            }
+        }
+
+        &__item {
+            overflow: hidden;
+            h2 {
+                color: white;
+                font-family: $font-family-title;
+                font-weight: $font-weight-title;
+                font-size: clamp(40px, 5.5vw, 100px);
+                margin: 0;
+                line-height: 1;
+                text-transform: uppercase;
+            }
+
+            &:nth-child(2) {
+                .c-menu-nav__link {
+                    transition-delay: .05s;
+                }
+
+                .u-bg {
+                    background: #00FAFF url(assets/img/gradient-2.jpeg);
+                }
+            }
+
+            &:nth-child(3) {
+
+                .c-menu-nav__link {
+                    transition-delay: .10s;
+                }
+
+                .u-bg {
+                    background: #0433FF url(assets/img/gradient-3.jpeg);
+                }
+            }
+
+            &:nth-child(4) {
+                .c-menu-nav__link {
+                    transition-delay: .15s;
+                }
+
+                .u-bg {
+                    background: #FF00B0 url(assets/img/gradient-4.jpeg);
+                }
+            }
+        }
+
+        &__row1 {
+            position: relative;
+            transition: transform $transition;
+        }
+
+        &__row2 {
+            transform: translate(0, 100%);
+            top: 0;
+            position: absolute;
+            background: #000;
+            z-index: 1;
+            transition: transform $transition;
+        }
+    }
+}

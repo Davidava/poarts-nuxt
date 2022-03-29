@@ -1,0 +1,25 @@
+.c-archive {
+    &-list {
+        column-count: 2;
+        gap: 0;
+
+        &__item {
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+        &__picture {
+            display: block;
+
+        }
+
+    }
+}
+
+@media(min-width: 540px) {
+    .c-archive {
+        &-list {
+            column-count: 3;
+        }
+    }
+}

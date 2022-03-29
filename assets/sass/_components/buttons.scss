@@ -1,0 +1,19 @@
+.c-btn {
+    min-height: 50px;
+    display: inline-block;
+    padding: 10px 30px 10px 30px;
+    position: relative;
+    font-size: 16px;
+    line-height: 30px;
+    text-decoration: none;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 25px;
+    font-family: 'Manrope-SemiBold', sans-serif;
+    text-align: center;
+    cursor: pointer;
+    transition: all .25s ease-in-out;
+    &:hover {
+        transform: translate(0, -3px);
+    }
+}

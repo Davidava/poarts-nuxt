@@ -1,0 +1,41 @@
+.c-app {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    > main {
+        flex-grow: 1;
+    }
+
+}
+.o-box {
+    margin: 0 auto;
+    max-width: 1220px;
+    padding: 0 30px;
+    position: relative;
+}
+
+body {
+    background: #000;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    color: white;
+    font-family: $font-family-base;
+    //font-weight: $font-weight-base;
+    font-size: $font-size-base;
+}
+
+@media(min-width: 540px) {
+    .o-box {
+        padding: 0 12vw;
+    }
+}
+
+@media(min-width: 540px) {
+    .o-box {
+        padding: 0 16vw;
+    }
+}
