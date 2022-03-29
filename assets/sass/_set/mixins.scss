@@ -7,7 +7,7 @@
 		font-family: $family;
 		font-display: swap;
 		src: local($family),
-			url('#{$filepath}.woff') format('woff'),
+			url('#{$filepath}.woff2') format('woff2'),
 			url('#{$filepath}.ttf') format('truetype');
 		font-weight: $weight;
 		font-style: $style;

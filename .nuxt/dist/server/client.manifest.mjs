@@ -10,16 +10,16 @@ export default {
       "layouts/default.vue"
     ],
     "css": [
-      "entry.4aa204c8.css"
+      "entry.608f1c57.css"
     ],
     "assets": [
-      "Manrope-Regular.5b3928b3.woff",
+      "Manrope-Regular.1f749647.woff2",
       "Manrope-Regular.29e1f93a.ttf",
-      "Manrope-SemiBold.e46ed31f.woff",
+      "Manrope-SemiBold.6629578d.woff2",
       "Manrope-SemiBold.e291df0b.ttf",
-      "Manrope-Bold.461c6651.woff",
+      "Manrope-Bold.f7f993df.woff2",
       "Manrope-Bold.bf0375ba.ttf",
-      "MonumentExtended-Regular.63047e87.woff",
+      "MonumentExtended-Regular.557c528a.woff2",
       "MonumentExtended-Regular.7effe5cb.ttf"
     ]
   },
