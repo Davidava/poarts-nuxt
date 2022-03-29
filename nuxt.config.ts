@@ -1,7 +1,5 @@
 import { defineNuxtConfig } from 'nuxt3'
 
-import svgLoader from 'vite-svg-loader'
-
 export default defineNuxtConfig({
     head: {
         title: 'poarts',
@@ -17,14 +15,4 @@ export default defineNuxtConfig({
     },
 
     css: ['~/assets/sass/app.scss'],
-    
-    target: 'static',
-
-    vite: {
-    plugins: [
-        svgLoader({
-        /* ... */
-        })
-    ]
-    }
 })
